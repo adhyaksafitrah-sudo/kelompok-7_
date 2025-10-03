@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CaffeKu Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">☕ CaffeKu</h2>
+      <nav>
+        <a href="#" class="active" onclick="showPage('dashboard')">Dashboard</a>
+        <a href="#" onclick="showPage('orders')">Pesanan</a>
+        <a href="#" onclick="showPage('menu')">Menu</a>
+        <a href="#" onclick="showPage('customers')">Pelanggan</a>
+        <a href="#" onclick="showPage('report')">Laporan</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <h1 id="pageTitle">Dashboard</h1>
+
+      <!-- Dashboard -->
+      <section id="dashboardPage" class="section active">
+        <div class="cards">
+          <div class="card">
+            <h3>Total Pesanan</h3>
+            <p id="totalOrders">0</p>
+          </div>
+          <div class="card">
+            <h3>Total Pelanggan</h3>
+            <p id="totalCustomers">0</p>
+          </div>
+          <div class="card">
+            <h3>Total Pendapatan</h3>
+            <p id="totalRevenueDash">Rp 0</p>
+          </div>
+          <div class="card">
+            <h3>Menu Terlaris</h3>
+            <p id="bestMenu">-</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pesanan -->
+      <section id="ordersPage" class="section">
+        <div class="content-box">
+          <h2>Daftar Pesanan</h2>
+          <button onclick="addOrder()">+ Tambah Pesanan</button>
+          <table id="ordersTable">
+            <thead>
+              <tr><th>No</th><th>Pelanggan</th><th>Menu</th><th>Jumlah</th><th>Total</th><th>Aksi</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section id="menuPage" class="section">
+        <div class="content-box">
+          <h2>Daftar Menu</h2>
+          <button onclick="addMenu()">+ Tambah Menu</button>
+          <table id="menuTable">
+            <thead>
+              <tr><th>No</th><th>Nama Menu</th><th>Harga</th><th>Kategori</th><th>Aksi</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Pelanggan -->
+      <section id="customersPage" class="section">
+        <div class="content-box">
+          <h2>Data Pelanggan</h2>
+          <table id="customersTable">
+            <thead>
+              <tr><th>No</th><th>Nama</th><th>Email</th><th>Aksi</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Laporan -->
+      <section id="reportPage" class="section">
+        <div class="content-box">
+          <h2>Laporan Penjualan</h2>
+          <p>Total Pesanan: <span id="reportOrders">0</span></p>
+          <p>Total Pelanggan: <span id="reportCustomers">0</span></p>
+          <p>Total Pendapatan: <span id="reportRevenue">Rp 0</span></p>
+          <p>Menu Terlaris: <span id="reportBestMenu">-</span></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
