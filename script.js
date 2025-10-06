@@ -1,11 +1,11 @@
 // Dummy data Pesanan (6 total)
 let orders = [
-  { pelanggan: "Andi", menu: "Cappuccino", jumlah: 2, total: 50000 },
-  { pelanggan: "Budi", menu: "Latte", jumlah: 1, total: 22000 },
-  { pelanggan: "Citra", menu: "Espresso", jumlah: 3, total: 54000 },
-  { pelanggan: "Dewi", menu: "Mocha", jumlah: 2, total: 60000 },
-  { pelanggan: "Eko", menu: "Green Tea", jumlah: 1, total: 25000 },
-  { pelanggan: "Fani", menu: "Latte", jumlah: 2, total: 44000 }
+  { pelanggan: "syifa", menu: "Cappuccino", jumlah: 2, total: 50000 },
+  { pelanggan: "rifka", menu: "Latte", jumlah: 1, total: 22000 },
+  { pelanggan: "billy", menu: "Espresso", jumlah: 3, total: 54000 },
+  { pelanggan: "adi", menu: "Mocha", jumlah: 2, total: 60000 },
+  { pelanggan: "dylan", menu: "Green Tea", jumlah: 1, total: 25000 },
+  { pelanggan: "Faizal", menu: "Latte", jumlah: 2, total: 44000 }
 ];
 
 // Dummy data Menu (5 total)
@@ -19,12 +19,12 @@ let menuItems = [
 
 // Dummy data Pelanggan (6 total)
 let customers = [
-  { nama: "Andi", email: "andi@mail.com" },
-  { nama: "Budi", email: "budi@mail.com" },
-  { nama: "Citra", email: "citra@mail.com" },
-  { nama: "Dewi", email: "dewi@mail.com" },
-  { nama: "Eko", email: "eko@mail.com" },
-  { nama: "Fani", email: "fani@mail.com" }
+  { nama: "syifa", email: "syifa@mail.com" },
+  { nama: "rifka", email: "rifka@mail.com" },
+  { nama: "billy", email: "billy@mail.com" },
+  { nama: "adi", email: "adi@mail.com" },
+  { nama: "dylan", email: "dylan@mail.com" },
+  { nama: "Faizal", email: "Faizal@mail.com" }
 ];
 
 // Navigasi antar halaman
@@ -154,3 +154,4 @@ function renderReport(){
 // Init
 function updateDashboard(){ renderDashboard(); }
 renderDashboard();
+
