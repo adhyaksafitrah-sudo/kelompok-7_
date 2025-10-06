@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Menu | CaffeKu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>☕ CaffeKu</h2>
+    <a href="index.html">Dashboard</a>
+    <a href="pesanan.html">Pesanan</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="pelanggan.html">Pelanggan</a>
+    <a href="laporan.html">Laporan</a>
+  </div>
+
+  <div class="main">
+    <h1>Edit Menu</h1>
+    <form action="menu.html" method="get">
+      <label for="nama">Nama Menu</label>
+      <input type="text" id="nama" name="nama" value="Espresso">
+
+      <label for="kategori">Kategori</label>
+      <select id="kategori" name="kategori">
+        <option selected value="kopi">Kopi</option>
+        <option value="non-kopi">Non-Kopi</option>
+        <option value="snack">Snack</option>
+      </select>
+
+      <label for="harga">Harga (Rp)</label>
+      <input type="text" id="harga" name="harga" value="20000">
+
+      <button type="submit" class="btn">Perbarui Menu</button>
+    </form>
+  </div>
+</body>
+</html>

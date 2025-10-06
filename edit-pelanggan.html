@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Pelanggan | CaffeKu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>☕ CaffeKu</h2>
+    <a href="index.html">Dashboard</a>
+    <a href="pesanan.html">Pesanan</a>
+    <a href="menu.html">Menu</a>
+    <a href="pelanggan.html" class="active">Pelanggan</a>
+    <a href="laporan.html">Laporan</a>
+  </div>
+
+  <div class="main">
+    <h1>Edit Data Pelanggan</h1>
+    <form action="pelanggan.html" method="get">
+      <label for="nama">Nama Pelanggan</label>
+      <input type="text" id="nama" name="nama" value="Syifa">
+
+      <label for="telepon">Nomor Telepon</label>
+      <input type="text" id="telepon" name="telepon" value="081234567890">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" value="syifa@gmail.com">
+
+      <label for="alamat">Alamat</label>
+      <textarea id="alamat" name="alamat" rows="3">Jl. Melati No. 2</textarea>
+
+      <button type="submit" class="btn">Perbarui Data</button>
+    </form>
+  </div>
+</body>
+</html>

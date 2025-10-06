@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tambah Pelanggan | CaffeKu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>☕ CaffeKu</h2>
+    <a href="index.html">Dashboard</a>
+    <a href="pesanan.html">Pesanan</a>
+    <a href="menu.html">Menu</a>
+    <a href="pelanggan.html" class="active">Pelanggan</a>
+    <a href="laporan.html">Laporan</a>
+  </div>
+
+  <div class="main">
+    <h1>Tambah Pelanggan Baru</h1>
+
+    <form action="pelanggan.html" method="get" class="form-container">
+      <label for="nama">Nama Pelanggan</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama pelanggan" required>
+
+      <label for="telepon">Nomor Telepon</label>
+      <input type="text" id="telepon" name="telepon" placeholder="Contoh: 081234567890" required>
+
+      <label for="email">Alamat Email</label>
+      <input type="email" id="email" name="email" placeholder="Contoh: pelanggan@gmail.com" required>
+
+      <label for="alamat">Alamat Lengkap</label>
+      <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat pelanggan"></textarea>
+
+      <button type="submit" class="btn">Simpan Pelanggan</button>
+    </form>
+  </div>
+</body>
+</html>

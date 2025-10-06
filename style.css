@@ -1,0 +1,574 @@
+/* ====== Style Umum ====== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7e0b2;
+  color: #3b1c0e;
+}
+
+/* ====== Sidebar ====== */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #4b2a14;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 500;
+}
+
+.sidebar a:hover, .sidebar a.active {
+  background-color: #6a3b1e;
+  border-radius: 10px;
+}
+
+/* ====== Konten Utama ====== */
+.main {
+  margin-left: 250px;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* ====== Card di Dashboard ====== */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ====== Tabel ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2c58a;
+}
+
+/* ====== Tombol ====== */
+.btn {
+  background-color: #4b2a14;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #6a3b1e;
+}
+
+.btn-delete {
+  background-color: #4b2a14;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #6a3b1e;
+}
+
+/* ====== Form ====== */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form .btn {
+  width: 100%;
+}
+
+/* ====== Tabel di Halaman Menu & Pesanan ====== */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #4b2a14;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* ==== STYLE KONFIRMASI HAPUS ==== */
+
+.confirm-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+  margin: 60px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.confirm-box h1 {
+  color: #4a2c2a;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.confirm-box p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Tombol utama (YA, HAPUS) */
+.btn {
+  background: #c0392b;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.2s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #e74c3c;
+}
+
+/* Tombol batal */
+.btn-cancel {
+  background: #bdc3c7;
+  color: #2c3e50;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.2s ease;
+  font-weight: bold;
+}
+
+.btn-cancel:hover {
+  background: #95a5a6;
+}
+
+/* ==== STYLE LAPORAN (PIE CHART) ==== */
+
+.chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.pie-chart {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #8e44ad 0% 40%,     /* Cappuccino 40% */
+    #3498db 40% 70%,    /* Latte 30% */
+    #f1c40f 70% 90%,    /* Croissant 20% */
+    #e67e22 90% 100%    /* Americano 10% */
+  );
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.legend {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.legend h3 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #4a2c2a;
+}
+
+.legend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.legend span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.warna1 { background: #8e44ad; }
+.warna2 { background: #3498db; }
+.warna3 { background: #f1c40f; }
+.warna4 { background: #e67e22; }
+
+/* ==== DASHBOARD UTAMA ==== */
+
+.header {
+  background: linear-gradient(135deg, #6f4e37, #3e2723);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 16px;
+  color: #f3e5ab;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  color: #4a2c2a;
+  margin-bottom: 10px;
+}
+
+.card .angka {
+  font-size: 26px;
+  font-weight: bold;
+  color: #6f4e37;
+}
+
+.chart-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.chart-section h2 {
+  text-align: center;
+  color: #4a2c2a;
+  margin-bottom: 25px;
+}
+
+.bar-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 250px;
+  padding: 0 20px;
+}
+
+.bar {
+  width: 40px;
+  background: linear-gradient(180deg, #a67b5b, #6f4e37);
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  transition: 0.3s;
+}
+
+.bar:hover {
+  background: linear-gradient(180deg, #c49a6c, #5d4037);
+  transform: scale(1.05);
+}
+
+.bar span {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+  color: #4a2c2a;
+  font-weight: bold;
+}
+
+/* ==== STATISTIK PENJUALAN ==== */
+
+.chart-section {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.chart-section h2 {
+  text-align: center;
+  color: #4a2c2a;
+  margin-bottom: 25px;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
+.chart-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 280px;
+  gap: 15px;
+  position: relative;
+}
+
+.y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-right: 10px;
+  color: #6f4e37;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.bar-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  width: 80%;
+  position: relative;
+  border-left: 2px solid #d7ccc8;
+  border-bottom: 2px solid #d7ccc8;
+  padding-bottom: 10px;
+}
+
+.bar {
+  width: 45px;
+  background: linear-gradient(180deg, #a67b5b, #6f4e37);
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.bar:hover {
+  background: linear-gradient(180deg, #c49a6c, #5d4037);
+  transform: scale(1.07);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Label nilai di atas bar */
+.bar::before {
+  content: attr(data-value);
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: #4a2c2a;
+  opacity: 0.9;
+}
+
+/* Label hari di bawah bar */
+.bar::after {
+  content: attr(data-day);
+}
+
+.bar span {
+  position: absolute;
+  bottom: -22px;
+  width: 100%;
+  text-align: center;
+  color: #4a2c2a;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* ==== LAPORAN PIE CHART ==== */
+
+.laporan-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.pie-chart {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #6f4e37 0% 15%,          /* Cappuccino */
+    #8d6e63 15% 25%,         /* Latte */
+    #c49a6c 25% 33%,         /* Croissant */
+    #a67b5b 33% 45%,         /* Matcha Latte */
+    #795548 45% 55%,         /* Chocolate Frappe */
+    #bcaaa4 55% 64%,         /* French Fries */
+    #d7ccc8 64% 75%,         /* Chicken Wings */
+    #efebe9 75% 85%,         /* Cheesecake */
+    #9c7a5f 85% 93%,         /* Tiramisu */
+    #e0c097 93% 100%         /* Lemon Tea */
+  );
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.legend {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  color: #4a2c2a;
+  font-weight: 500;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.legend .warna {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Warna-warna sesuai potongan pie */
+.warna1 { background: #6f4e37; }
+.warna2 { background: #8d6e63; }
+.warna3 { background: #c49a6c; }
+.warna4 { background: #a67b5b; }
+.warna5 { background: #795548; }
+.warna6 { background: #bcaaa4; }
+.warna7 { background: #d7ccc8; }
+.warna8 { background: #efebe9; }
+.warna9 { background: #9c7a5f; }
+.warna10 { background: #e0c097; }
